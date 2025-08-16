@@ -31,8 +31,8 @@ function App() {
       <TaskProvider>
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         
-        <main className="relative pt-40 pb-16">
-          <div className="container mx-auto px-6">
+        <main className="relative pt-32 md:pt-40 pb-16">
+          <div className="container mx-auto px-4 md:px-6">
             {isLoading ? (
               <div className="flex justify-center items-center p-16">
                 <div className="glass p-8 rounded-3xl text-center">
@@ -41,7 +41,7 @@ function App() {
                 </div>
               </div>
             ) : (
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
                 <div className="lg:col-span-2">
                   <TaskList />
                 </div>

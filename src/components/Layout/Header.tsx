@@ -44,36 +44,36 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Left side - Logo and Brand */}
         <div className="flex items-center group">
-          <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 p-4 rounded-3xl shadow-2xl mr-6 transform group-hover:scale-110 transition-all duration-300">
-            <KhandaLogo className="h-12 w-12" />
+          <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 p-3 md:p-4 rounded-2xl md:rounded-3xl shadow-2xl mr-3 md:mr-6 transform group-hover:scale-110 transition-all duration-300">
+            <KhandaLogo className="h-8 w-8 md:h-12 md:w-12" />
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-white tracking-tight mb-2">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-1 md:mb-2">
               Nitt Karam
             </h1>
-            <p className="text-white/70 text-lg font-medium">
+            <p className="text-white/70 text-sm md:text-base lg:text-lg font-medium">
               Premium Task Management
             </p>
           </div>
         </div>
         
         {/* Center - App Tagline with Khanda Symbol */}
-        <div className="hidden xl:flex items-center">
+        <div className="hidden lg:flex items-center">
           <div className="text-center">
             {/* Small Khanda Symbol above the tagline */}
-            <div className="flex justify-center mb-4">
-              <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 p-3 rounded-2xl shadow-xl transform hover:scale-110 transition-all duration-300">
+            <div className="flex justify-center mb-3 md:mb-4">
+              <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 p-2 md:p-3 rounded-xl md:rounded-2xl shadow-xl transform hover:scale-110 transition-all duration-300">
                 <img 
                   src="/image.png" 
                   alt="Khanda - Sikh Symbol"
-                  className="h-6 w-6"
+                  className="h-4 w-4 md:h-6 md:w-6"
                 />
               </div>
             </div>
-            <p className="text-white/90 font-bold mb-2 text-xl">
+            <p className="text-white/90 font-bold mb-1 md:mb-2 text-lg md:text-xl">
               Premium Task Management
             </p>
-            <p className="text-white/70 text-base">
+            <p className="text-white/70 text-sm md:text-base">
               Organize • Plan • Achieve
             </p>
           </div>
@@ -83,17 +83,17 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
         <div className="flex items-center">
           <button
             onClick={toggleDarkMode}
-            className="glass px-6 py-3 rounded-2xl text-white font-semibold transition-all duration-300 hover:bg-white/20 hover:scale-105 active:scale-95 flex items-center space-x-2"
+            className="glass px-4 md:px-6 py-2 md:py-3 rounded-xl md:rounded-2xl text-white font-semibold transition-all duration-300 hover:bg-white/20 hover:scale-105 active:scale-95 flex items-center space-x-2 text-sm md:text-base"
           >
             {isDarkMode ? (
               <>
-                <Sun className="h-5 w-5" />
-                <span>Light</span>
+                <Sun className="h-4 w-4 md:h-5 md:w-5" />
+                <span className="hidden sm:inline">Light</span>
               </>
             ) : (
               <>
-                <Moon className="h-5 w-5" />
-                <span>Dark</span>
+                <Moon className="h-4 w-4 md:h-5 md:w-5" />
+                <span className="hidden sm:inline">Dark</span>
               </>
             )}
           </button>
