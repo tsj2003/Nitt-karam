@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%);
   font-family: 'Inter', sans-serif;
 }
 
@@ -44,17 +44,19 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* Glass morphism effect */
+/* Premium glass morphism effect */
 .glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .glass-dark {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 /* Smooth animations */
@@ -62,22 +64,22 @@ body {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Modern button styles */
+/* Premium button styles */
 .btn-modern {
-  @apply px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95;
+  @apply px-8 py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95;
 }
 
 .btn-primary {
-  @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg hover:shadow-xl;
+  @apply bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white shadow-xl hover:shadow-2xl;
 }
 
 .btn-secondary {
-  @apply bg-white/20 text-white backdrop-blur-sm border border-white/30 hover:bg-white/30;
+  @apply bg-white/25 text-white backdrop-blur-sm border border-white/40 hover:bg-white/35 shadow-lg;
 }
 
-/* Card styles */
+/* Premium card styles */
 .card-modern {
-  @apply bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl;
+  @apply bg-white/15 backdrop-blur-xl border border-white/30 rounded-3xl shadow-2xl;
 }
 
 /* Input styles */

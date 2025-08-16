@@ -38,42 +38,42 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled 
           ? 'glass shadow-2xl py-4' 
-          : 'bg-transparent py-8'
+          : 'bg-transparent py-6'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Left side - Logo and Brand */}
         <div className="flex items-center group">
-          <div className="bg-gradient-to-br from-amber-400 to-orange-500 p-3 rounded-3xl shadow-2xl mr-4 transform group-hover:scale-110 transition-all duration-300">
-            <KhandaLogo className="h-10 w-10" />
+          <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 p-4 rounded-3xl shadow-2xl mr-6 transform group-hover:scale-110 transition-all duration-300">
+            <KhandaLogo className="h-12 w-12" />
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-white tracking-tight mb-1">
+            <h1 className="text-4xl font-bold text-white tracking-tight mb-2">
               Nitt Karam
             </h1>
-            <p className="text-white/60 text-sm font-medium">
-              AI-Powered Productivity
+            <p className="text-white/70 text-lg font-medium">
+              Premium Task Management
             </p>
           </div>
         </div>
         
         {/* Center - App Tagline with Khanda Symbol */}
-        <div className="hidden lg:flex items-center">
+        <div className="hidden xl:flex items-center">
           <div className="text-center">
             {/* Small Khanda Symbol above the tagline */}
             <div className="flex justify-center mb-4">
-              <div className="bg-gradient-to-br from-amber-400 to-orange-500 p-2 rounded-2xl shadow-lg transform hover:scale-110 transition-all duration-300">
+              <div className="bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 p-3 rounded-2xl shadow-xl transform hover:scale-110 transition-all duration-300">
                 <img 
                   src="/image.png" 
                   alt="Khanda - Sikh Symbol"
-                  className="h-5 w-5"
+                  className="h-6 w-6"
                 />
               </div>
             </div>
-            <p className="text-white/80 font-semibold mb-2 text-lg">
-              Smart Task Management
+            <p className="text-white/90 font-bold mb-2 text-xl">
+              Premium Task Management
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white/70 text-base">
               Organize • Plan • Achieve
             </p>
           </div>
